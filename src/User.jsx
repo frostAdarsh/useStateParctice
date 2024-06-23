@@ -1,8 +1,19 @@
-const User = ({ firstName, lastName }) => {
+const User = ({ firstName, lastName, age, id ,IncreaseAge}) => {
+  
   return (
     <div>
       <p>Fristname {firstName}</p>
-      <p>lastname {lastName}</p>
+      <p>Lastname {lastName}</p>
+      <p>Age {age}</p>
+      <p>Id {id}</p>
+
+      <button
+        onClick={() => {
+          IncreaseAge(id);
+        }}
+      >
+        Add age
+      </button>
     </div>
   );
 };

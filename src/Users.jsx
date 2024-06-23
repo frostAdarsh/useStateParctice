@@ -1,10 +1,10 @@
 import User from "./User";
 
-const Users = ({ users }) => {
+const Users = ({ users,IncreaseAge }) => {
   return (
     <>
       {users.map((user) => (
-        <User {...user} key={user.id} />
+        <User {...user} key={user.id}  IncreaseAge={IncreaseAge}/>
       ))}
     </>
   );
